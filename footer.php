@@ -5,7 +5,7 @@
         <h1>Note-iT</h1>
     </div>
     <div class="site-map">
-        <a href="#">Annonces</a>
+        <a href="annonces.php">Annonces</a>
         <a href="#">Annonces</br>Dynamiques</a>
         <a href="#">Recherche</a>
         <a href="#">Connexion</a>
@@ -16,3 +16,4 @@
             </p>
         </div>
     </section>
+<script src="js/script.js"></script>
