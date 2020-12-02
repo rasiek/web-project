@@ -9,7 +9,7 @@
 
             <ul>
                 <li><a href="annonces.php">Annonces</a></li>
-                <li><a href="#">Annonces Dynamiques</a></li>
+                <li><a href="annonces_dyna.php">Annonces Dynamiques</a></li>
                 <li><a href="#">Recherche</a></li>
             </ul>
 

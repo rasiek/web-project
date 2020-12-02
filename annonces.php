@@ -6,12 +6,12 @@ include "bdd.php";
 $titre = 'Annonces';
 $infos =  visualisation();
 
-include 'head.php';
+include 'templates/head.php';
 ?>
 
 <body>
 
-<?php include 'header.php'; ?>
+<?php include 'templates/header.php'; ?>
 
     <div id="annonces" class="bloc">
     <?php
@@ -51,6 +51,6 @@ include 'head.php';
     </div>
 
 
-<?php include 'footer.php' ?>    
+<?php include 'templates/footer.php' ?>    
 </body>
 </html>

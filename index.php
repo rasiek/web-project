@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php 
-$titre = 'Accueil | Note-it';
-include 'head.php'; ?>
+$titre = 'Accueil';
+include 'templates/head.php'; ?>
 <body>
 
-<?php include 'header.php'; ?>
+<?php include 'templates/header.php'; ?>
 
 <section class="hero">
         <img src="imgs/1014-[Converted].png" alt="speaker" class="speaker">
@@ -33,6 +33,6 @@ include 'head.php'; ?>
     <div></div>
 </section>
 
-<?php include 'footer.php' ?>    
+<?php include 'templates/footer.php' ?>    
 </body>
 </html>
