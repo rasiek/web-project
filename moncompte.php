@@ -9,8 +9,13 @@ include 'static/templates/head.php'; ?>
 <body>
 <?php include 'static/templates/header.php'; ?>
 
+<div class="info-user">
 
-<div class="mesannonces"></div>
+</div>
+
+<div class="self-annon">
+    
+</div>
 
 
 

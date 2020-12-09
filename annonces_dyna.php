@@ -17,12 +17,11 @@ include 'static/templates/head.php'
 include 'static/templates/header.php';
 ?>
 
-<div class="load-annon">
-    <button type="submit" >Charger Tous les Annonces</button>
-</div>
+<form id="btn-list" class="form-annon-dyna">
+    <input type="submit" value="Charger Tous les Annonces"></input>
+</form>
 
-
-<div class="annonces"></div>
+<div id="list-annon-dyna" class="annon-dyna"></div>
 
 
 

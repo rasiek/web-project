@@ -113,3 +113,18 @@ function getUser($userCredentials) {
     }
 
 };
+
+function affichage($termes) {
+    $pdo = connexion();
+    if ($termes){ 
+        $requeteSQLAffichage = " SELECT * from annonces WHERE titre LIKE '%$termes%' OR description LIKE '%$termes%' OR categorie LIKE '%$termes%' OR pseudo LIKE  '%$termes%' ";
+    } else {  
+        $requeteSQLAffichage = " SELECT * from annonces ";
+    } 
+    // exécution de la requête
+$stm = $pdo->query($requeteSQLAffichage);
+// récupération du résultat
+$infosannonces = $stm->fetchAll(PDO::FETCH_ASSOC);
+        return $infosannonces;
+ 
+}

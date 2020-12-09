@@ -15,7 +15,7 @@ include 'static/templates/head.php'; ?>
         <img src="static/imgs/1014-[Converted].png" alt="speaker" class="speaker">
         <img src="static/imgs/speaker.png" alt="speaker" class="big-speaker">
         <h1>
-            Trouvez en un click <?php echo $_SESSION['username']; ?>
+            Trouvez en un click, <?php echo ucfirst($_SESSION['username']); ?>
         </h1>
         <p>
             Note-iT  propose la meilleur plataforme pour rechercher ce dont</br>vous avez besoin. Très facile à utiliser il vous reste que</br> 
