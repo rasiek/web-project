@@ -1,24 +1,34 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <?php
 #Variables
 $titre = 'Annonces Dynamiques';
 
-include 'templates/head.php'
+include 'static/templates/head.php'
  ?>
  
 <body>
 
 <?php 
-include 'templates/header.php';
+include 'static/templates/header.php';
 ?>
 
+<div class="load-annon">
+    <button type="submit" >Charger Tous les Annonces</button>
+</div>
+
+
+<div class="annonces"></div>
 
 
 
 
 <?php 
-include 'templates/footer.php';
+include 'static/templates/footer.php';
 ?>  
 </body>
 </html>

@@ -1,7 +1,7 @@
 
 <section class="footer">
     <div class="logo">
-        <img src="imgs/logo.png" alt="logo">
+        <img src="static/imgs/logo.png" alt="logo">
         <h1>Note-iT</h1>
     </div>
     <div class="site-map">
@@ -16,4 +16,4 @@
             </p>
         </div>
     </section>
-<script src="js/script.js"></script>
+<script src="static/js/script.js"></script>

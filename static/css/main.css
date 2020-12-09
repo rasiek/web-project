@@ -114,16 +114,20 @@ header img {
     width: 1em;
     height: auto;
 }
+.hero .btns {
+    display: flex;
+    margin-left: 10px;
+}
+
 
 .hero button {
-    margin: 10px auto auto 30px;
-
+    margin: 0;
     width: 150px;
     height: 50%;
     border-radius: 1em;
     border: #f16667;
     font-family: 'Convergence', sans-serif;
-    background-color: aqua;
+    background-color: #3498DB;
     color: white;
 }
 .hero .pattern {
@@ -222,6 +226,11 @@ header img {
         width: 200px;
         margin-top: 30px;
     }
+    .hero button:last-child {
+        margin-left: 20px;
+        }
+
+    
     .hero .pattern {
         display: none;
     }
@@ -276,6 +285,43 @@ header img {
         text-decoration: none;
     }
 
+    .dropbtn {
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        background-color: #3498DB;
+    }
+
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: white;
+        color: #3498DB;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #3498DB;
+        min-width: 160px;
+        padding: 12px 16px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .no-show {
+        display: none;
+    }
+
     .hero .speaker {
         display: none;
     }
@@ -305,10 +351,12 @@ header img {
 
     }
 
-    .hero button {
-    margin-left: 80px;
-
+    .hero button:first-child {
+    margin-left: 30px;
     }
+    .hero button:last-child {
+        margin-left: 20px;
+        }
     .hero .big-speaker{
         margin-top: 50px;
         display: block;
@@ -332,8 +380,11 @@ header img {
         margin-left: 200px;
     }
 
-    .hero button {
-        margin-left: 250px;
+    .hero button:first-child {
+        margin-left: 200px;
+    }
+    .hero button:last-child {
+        margin-left: 20px;
     }
 }
 

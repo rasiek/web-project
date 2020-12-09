@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <?php
@@ -6,12 +8,12 @@ include "bdd.php";
 $titre = 'Annonces';
 $infos =  visualisation();
 
-include 'templates/head.php';
+include 'static/templates/head.php';
 ?>
 
 <body>
 
-<?php include 'templates/header.php'; ?>
+<?php include 'static/templates/header.php'; ?>
 
     <div id="annonces" class="bloc">
     <?php
@@ -51,6 +53,6 @@ include 'templates/head.php';
     </div>
 
 
-<?php include 'templates/footer.php' ?>    
+<?php include 'static/templates/footer.php' ?>    
 </body>
 </html>

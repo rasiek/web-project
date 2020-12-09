@@ -4,11 +4,11 @@
     background-size: cover;
 }
 
-.login-box {
+.login-window {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 60vh;
+    height: auto;
     color: white;
 }
 
@@ -18,42 +18,64 @@
     margin-bottom: 50px;
     padding: 13px 0;
 }
-.login-box .textbox i {
-    color: #4caf50;
+.textbox i {
+    color: white;
     width: 26px;
 }
 
-.login-box .textbox {
-
+.textbox {
+    display: flex;
     overflow: hidden;
     font-size: 20px;
     padding: 8px 0;
     margin: 8px 0;
-    border-bottom: 1px solid #4caf50;
+    border-bottom: 1px solid white;
 }
 
-.login-box ::placeholder {
+.login-window ::placeholder {
     color: white;
 }
 
-.login-box input {
+.login-window input {
     border: none;
     outline: none;
     background: none;
     color: white;
-    font-size: 18px;
-    margin: 10px;
 
 }
 
-.login-box .btn {
+.login-window .btn {
 
     background: none;
     color: white;
     padding: 5px;
-    border: 2px solid #4caf50;
+    border: 2px solid white;
     font-size: 20px;
     cursor: pointer;
-    margin: 12px;
+    /* margin: 12px; */
 
 }
+
+.test p {
+    font-size: 4em;
+    color: white;
+    margin: auto;
+}
+
+.option-list {
+    display: none;
+
+}
+
+.option-list ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+}
+
+.show-list {
+    display: block;
+}
+

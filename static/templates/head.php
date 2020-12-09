@@ -2,7 +2,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Note-it | <?php echo $titre ?></title>
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/static/css/main.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Convergence&display=swap" rel="stylesheet">

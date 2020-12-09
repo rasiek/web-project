@@ -1,8 +1,11 @@
 <?php
-include 'bdd.php';
+include '../bdd.php';
+
+creationTableUser();
 
 creationTable();
 
+insertionDonneesUser();
 insertionDonneesExemple();
 
 ?>
