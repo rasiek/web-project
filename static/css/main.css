@@ -1,9 +1,14 @@
 @import url('annonces.css');
 @import url('login.css');
 @import url('moncompte.css');
+@import url('list_dyna.css');
+@import url('recherche.css');
+@import url('ajout-annon.css');
 
 body {
     margin: 0;
+    position: relative;
+    min-height: 37vh;
 }
 
 h1 {
@@ -99,7 +104,7 @@ header img {
 }
 
 .hero .speaker {
-    top: 30%;
+    /* top: 30%; */
     right: 0;
     position: absolute;
     opacity: 35%;
@@ -131,6 +136,12 @@ header img {
     background-color: #3498DB;
     color: white;
 }
+
+.hero button a {
+    text-decoration: none;
+    color: white;
+}
+
 .hero .pattern {
     align-self: end;
     width: 100%;
@@ -165,6 +176,9 @@ header img {
     row-gap: 5px;
     margin-top: 20px;
     height: 60vh;
+    position: absolute;
+    top: 100%;
+    width: 100%;
 }
 
 .footer .logo {

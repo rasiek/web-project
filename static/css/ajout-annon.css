@@ -1,0 +1,35 @@
+.formulaire {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.formulaire h2 {
+    font-family: 'Montserrat';
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #3498DB;
+}
+
+.form-ajout{
+    margin: auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(52, 152, 219, 0.3);
+    border-radius: 20px;
+}
+
+.form-ajout p:last-child input {
+    background-color: #3498DB;
+    border: none;
+    color: white;
+    width: 100px;
+    height: 30px;
+    font-family: 'Hind Guntur', sans-serif;
+    font-size: 1.2em;
+}

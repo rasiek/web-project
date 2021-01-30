@@ -7,8 +7,7 @@ require_once("../bdd.php");
     // les données nécessaires pour caractériser une loutre; si certains paramètres
     // ne sont pas fournis, la requête SQL échouera !
 $infosannonces = $_REQUEST;
-  
-var_dump($_REQUEST);
+
     
 addannonces($infosannonces);
 

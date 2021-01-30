@@ -2,7 +2,15 @@
 require_once("../bdd.php");
 
 // on récupère l'identifiant fourni dans la requête
-$listeannonces = affichage($_REQUEST["termes"]);
+
+if ($_REQUEST != null) {
+
+    $critere = $_REQUEST['critere'];
+    $listeannonces = affichage($critere);
+} else {
+    $listeannonces = affichage($_REQUEST);
+}
+
 
 // on informe le client qu'on va lui renvoyer des données au format JSON
 header('Content-Type: application/json');

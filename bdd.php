@@ -128,3 +128,22 @@ $infosannonces = $stm->fetchAll(PDO::FETCH_ASSOC);
         return $infosannonces;
  
 }
+
+function suppressionannonces($id) {
+    $pdo = connexion();
+    $requeteSQLDeletion = "DELETE FROM annonces WHERE ( id = :id )";
+    $stmt = $pdo->prepare($requeteSQLDeletion);
+ 
+    // $stmt->debugDumpParams();
+    return $stmt->execute([ "id" => $id]);
+}
+
+function addannonces($donnees) {
+    $pdo = connexion();
+    
+    $requeteSQLInsertion = "INSERT INTO annonces (titre, description, categorie, pseudo, prix, photo, rdv_lat, rdv_lon) VALUES (:titre, :description, :type, :pseudo, :prix, :image, :rdv_lat, :rdv_lon)";
+    $stmt = $pdo->prepare($requeteSQLInsertion);
+    // $stmt->debugDumpParams();
+    return $stmt->execute($donnees);
+}
+

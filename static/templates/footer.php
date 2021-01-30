@@ -7,7 +7,7 @@
     <div class="site-map">
         <a href="annonces.php">Annonces</a>
         <a href="annonces_dyna.php">Annonces</br>Dynamiques</a>
-        <a href="#">Recherche</a>
+        <a href="recherche.php">Recherche</a>
         <a href="#">Connexion</a>
         </div>
         <div class="mentions">

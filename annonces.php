@@ -18,36 +18,23 @@ include 'static/templates/head.php';
     <div id="annonces" class="bloc">
     <?php
     foreach ($infos as $annonces ){ ?>  
-        
-        <ul>
-            <li>
-                <label>Titre:</label> <?php echo $annonces["titre"]; ?> 
-            </li>
-            <li>
-                <label>description:</label> <?php echo $annonces["description"]; ?>
-            </li>
-            <li>
-                <label>catégorie:</label> <?php echo $annonces["catégorie"]; ?>
-            </li>
-            <li>
-                <label>pseudo:</label> <?php echo $annonces["pseudo"]; ?> 
-            </li>
-            <li>
-                <label>prix:</label> <?php echo $annonces["prix"]; ?>
-            </li>
-            <li>
-                <label>photo:</label> <img src="<?php echo $annonces["photo"]; ?>">
-            </li>
-            <li>
-                <label>rdv_lat:</label> <?php echo $annonces["rdv_lat"]; ?> 
-            </li>
-            <li>
-                <label>rdv_lon:</label> <?php echo $annonces["rdv_lon"]; ?>
-            </li>
-            <li>
-                <label>date:</label> <?php echo $annonces["date"]; ?>
-            </li>
-        </ul>
+          <div class="annon-card">
+              <img src="<?php echo $annonces["photo"]; ?>" alt="">
+              <div class="titre-annon">
+                  <h2><?php echo $annonces["titre"]; ?></h2>
+                  <p><?php echo $annonces["description"]; ?></p>
+              </div>
+              <div class="corps-annon">
+                  <p><strong>Categorie:</strong> <?php echo $annonces["catégorie"]; ?></p>
+                  <p><strong>Publié par:</strong> <?php echo $annonces["pseudo"]; ?> </p>
+                  <p><strong>Prix:</strong> <?php echo $annonces["prix"]; ?></p>
+                  <p><strong>Ville:</strong> <?php echo $annonces["rdv_lat"]; ?> <?php echo $annonces["rdv_lon"]; ?></p>
+              </div>
+              <div class="date-trash">
+                  <p>Publié le: <?php echo $annonces["date"]; ?></p>
+                  <button onclick="suppFunc(<?php echo $annonces['id']; ?>)"><i class="fas fa-trash-alt"></i></button>
+              </div>
+          </div>
     <?php  } ?>
 
     </div>
