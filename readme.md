@@ -1,21 +1,21 @@
 
-#Ads Wesite
+# Ads Website
 
 University project for the web development class. Classified ads website, using PHP, Javascript and AJAX, mobile development concepts and
 use of the XMLHTTPRquest model.
 
-##Technologies
+## Technologies
 
-*HTML
-*CSS
-*Javascript
-  *XMLHTTPRequest
- *PHP
- *SQLite
+* HTML
+* CSS
+* Javascript
+  * XMLHTTPRequest
+* PHP
+* SQLite
  
  ## Concepts
  
-*Webservices
-*Responsive Design
+* Webservices
+* Responsive Design
 
  
